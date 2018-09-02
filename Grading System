@@ -1,0 +1,50 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	/* Simple program to determine grade classification of a student */
+	
+	int data;
+	cout << "Please enter your exam score: ";
+	cin >> data;
+
+	if (data < 100 && data >= 80)
+	{
+		cout << endl << " Excellent!...You had grade A" << endl;
+	}
+	else if (data < 80 && data >= 75)
+	{
+		cout << endl << " Very good!...You had grade B+" << endl;
+	}
+	else if (data < 75 && data >= 70)
+	{
+		cout << endl << " Good!...You had grade B" << endl;
+	}
+	else if (data < 70 && data >= 65)
+	{
+		cout << endl << " Fairly good!...You had grade C+" << endl;
+	}
+	else if (data < 65 && data >= 60)
+	{
+		cout << endl << " Average!...You had grade C" << endl;
+	}
+	else if (data < 60 && data >= 55)
+	{
+		cout << endl << " Below Average!...You had grade D+" << endl;
+	}
+	else if (data < 55 && data >= 50)
+	{
+		cout << endl << " Marginal Pass!...You had grade D" << endl;
+	}
+	else if (data < 50 && data >= 45)
+	{
+		cout << endl << " Unsatisfactory!...You had grade E" << endl;
+	}
+	else
+	{
+		cout << endl << " FAILED...!!!"
+	}
+	return 0;
+}
