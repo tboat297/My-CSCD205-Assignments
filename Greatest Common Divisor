@@ -1,0 +1,48 @@
+
+#include <iostream>
+
+
+
+using namespace std;
+
+
+
+int gcd (int a, int b)
+
+{
+
+if (b == 0)
+
+    {
+    
+    return a;
+    
+    }
+
+int r = a % b;
+
+a = b;
+
+b = r;
+
+gcd(a, b);
+
+}
+
+
+
+int main()
+
+{
+
+    int a, b;
+    
+    cout << " Enter values for Parameters 'a' and 'b', separated by a space: ";
+
+    cin >> a >> b;
+
+    cout << endl << " " << gcd(a, b) << endl;
+
+    return 0;
+
+}
